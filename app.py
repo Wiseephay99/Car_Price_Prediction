@@ -1,22 +1,11 @@
-import numpy as np
+
+
 import streamlit as st
-import os
+import numpy as np
 import pickle
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-model_path = os.path.join(BASE_DIR, "lr_model.pkl")
-
-model = pickle.load(open(model_path, "rb"))
-
-
 # Load trained linear regression model
-# model = pickle.load(open('lr_model.pkl', 'rb'))
-
-
-model_path = os.path.join(BASE_DIR, "lr_model.pkl")
-
-model = pickle.load(open(model_path, "rb"))
-
+model = pickle.load(open('lr_model.pkl', 'rb'))
 # Streamlit UI
 st.set_page_config(page_title="Used Car Price Predictor", layout="centered")
 
