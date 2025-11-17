@@ -1,8 +1,0 @@
-streamlit
-pandas
-numpy
-matplotlib
-seaborn
-joblib
-xgboost
-scikit-learn==1.5.2
